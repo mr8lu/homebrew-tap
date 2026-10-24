@@ -1,6 +1,6 @@
-# mr8lu Homebrew Tap
+# Blackmarker Studio - Homebrew Tap
 
-Official Homebrew Tap for **Blackmarker Studio** (`studio.blackmarker.app`) - Sovereign, Air-Gapped PDF Redaction & QPDF Stream Sanitization Studio for macOS 14+.
+Official Homebrew Tap for **Blackmarker Studio** (`studio.blackmarker.app`) - **On-device FOIA, HIPAA, and financial PDF redactor** for macOS 14+.
 
 ## Install
 
