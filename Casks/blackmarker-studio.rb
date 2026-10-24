@@ -4,19 +4,14 @@ cask "blackmarker-studio" do
 
   url "https://github.com/mr8lu/blackmarker-studio/releases/download/v#{version}/Blackmarker-Studio-#{version}-macos.zip"
   name "Blackmarker Studio"
-  desc "Sovereign air-gapped PDF redaction and QPDF content-stream sanitization studio"
+  desc "On-device FOIA, HIPAA, and financial PDF redactor"
   homepage "https://github.com/mr8lu/blackmarker-studio"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
   depends_on formula: "uv"
   depends_on formula: "qpdf"
 
   app "Blackmarker Studio.app"
-
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Blackmarker Studio.app"]
-  end
 
   zap trash: [
     "~/Library/Application Support/RedactGov",
